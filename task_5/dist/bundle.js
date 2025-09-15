@@ -1,0 +1,49 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/*!********************!*\
+  !*** ./js/main.ts ***!
+  \********************/
+
+// Function to sum MajorCredits
+function sumMajorCredits(subject1, subject2) {
+    return {
+        credits: subject1.credits + subject2.credits,
+        __brand: "MajorCredits"
+    };
+}
+// Function to sum MinorCredits
+function sumMinorCredits(subject1, subject2) {
+    return {
+        credits: subject1.credits + subject2.credits,
+        __brand: "MinorCredits"
+    };
+}
+// Example usage to demonstrate the functionality
+var majorSubject1 = {
+    credits: 3,
+    __brand: "MajorCredits"
+};
+var majorSubject2 = {
+    credits: 4,
+    __brand: "MajorCredits"
+};
+var minorSubject1 = {
+    credits: 1,
+    __brand: "MinorCredits"
+};
+var minorSubject2 = {
+    credits: 2,
+    __brand: "MinorCredits"
+};
+// Test the functions
+var totalMajorCredits = sumMajorCredits(majorSubject1, majorSubject2);
+console.log('Total Major Credits:', totalMajorCredits.credits); // Should print: 7
+var totalMinorCredits = sumMinorCredits(minorSubject1, minorSubject2);
+console.log('Total Minor Credits:', totalMinorCredits.credits); // Should print: 3
+// The following would cause TypeScript errors due to nominal typing:
+// sumMajorCredits(minorSubject1, minorSubject2); // Error: MinorCredits not assignable to MajorCredits
+// sumMinorCredits(majorSubject1, majorSubject2); // Error: MajorCredits not assignable to MinorCredits
+
+/******/ })()
+;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQVlBLCtCQUErQjtBQUMvQixTQUFTLGVBQWUsQ0FBQyxRQUFzQixFQUFFLFFBQXNCO0lBQ3JFLE9BQU87UUFDTCxPQUFPLEVBQUUsUUFBUSxDQUFDLE9BQU8sR0FBRyxRQUFRLENBQUMsT0FBTztRQUM1QyxPQUFPLEVBQUUsY0FBYztLQUN4QixDQUFDO0FBQ0osQ0FBQztBQUVELCtCQUErQjtBQUMvQixTQUFTLGVBQWUsQ0FBQyxRQUFzQixFQUFFLFFBQXNCO0lBQ3JFLE9BQU87UUFDTCxPQUFPLEVBQUUsUUFBUSxDQUFDLE9BQU8sR0FBRyxRQUFRLENBQUMsT0FBTztRQUM1QyxPQUFPLEVBQUUsY0FBYztLQUN4QixDQUFDO0FBQ0osQ0FBQztBQUVELGlEQUFpRDtBQUNqRCxJQUFNLGFBQWEsR0FBaUI7SUFDbEMsT0FBTyxFQUFFLENBQUM7SUFDVixPQUFPLEVBQUUsY0FBYztDQUN4QixDQUFDO0FBRUYsSUFBTSxhQUFhLEdBQWlCO0lBQ2xDLE9BQU8sRUFBRSxDQUFDO0lBQ1YsT0FBTyxFQUFFLGNBQWM7Q0FDeEIsQ0FBQztBQUVGLElBQU0sYUFBYSxHQUFpQjtJQUNsQyxPQUFPLEVBQUUsQ0FBQztJQUNWLE9BQU8sRUFBRSxjQUFjO0NBQ3hCLENBQUM7QUFFRixJQUFNLGFBQWEsR0FBaUI7SUFDbEMsT0FBTyxFQUFFLENBQUM7SUFDVixPQUFPLEVBQUUsY0FBYztDQUN4QixDQUFDO0FBRUYscUJBQXFCO0FBQ3JCLElBQU0saUJBQWlCLEdBQUcsZUFBZSxDQUFDLGFBQWEsRUFBRSxhQUFhLENBQUMsQ0FBQztBQUN4RSxPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixFQUFFLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsa0JBQWtCO0FBRWxGLElBQU0saUJBQWlCLEdBQUcsZUFBZSxDQUFDLGFBQWEsRUFBRSxhQUFhLENBQUMsQ0FBQztBQUN4RSxPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixFQUFFLGlCQUFpQixDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsa0JBQWtCO0FBRWxGLHFFQUFxRTtBQUNyRSx1R0FBdUc7QUFDdkcsdUdBQXVHIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdHlwZXNjcmlwdF9kZXBlbmRlbmNpZXMvLi9qcy9tYWluLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEludGVyZmFjZSBmb3IgTWFqb3JDcmVkaXRzIHdpdGggYnJhbmQgcHJvcGVydHkgZm9yIG5vbWluYWwgdHlwaW5nXG5pbnRlcmZhY2UgTWFqb3JDcmVkaXRzIHtcbiAgY3JlZGl0czogbnVtYmVyO1xuICBfX2JyYW5kOiBcIk1ham9yQ3JlZGl0c1wiO1xufVxuXG4vLyBJbnRlcmZhY2UgZm9yIE1pbm9yQ3JlZGl0cyB3aXRoIGJyYW5kIHByb3BlcnR5IGZvciBub21pbmFsIHR5cGluZ1xuaW50ZXJmYWNlIE1pbm9yQ3JlZGl0cyB7XG4gIGNyZWRpdHM6IG51bWJlcjtcbiAgX19icmFuZDogXCJNaW5vckNyZWRpdHNcIjtcbn1cblxuLy8gRnVuY3Rpb24gdG8gc3VtIE1ham9yQ3JlZGl0c1xuZnVuY3Rpb24gc3VtTWFqb3JDcmVkaXRzKHN1YmplY3QxOiBNYWpvckNyZWRpdHMsIHN1YmplY3QyOiBNYWpvckNyZWRpdHMpOiBNYWpvckNyZWRpdHMge1xuICByZXR1cm4ge1xuICAgIGNyZWRpdHM6IHN1YmplY3QxLmNyZWRpdHMgKyBzdWJqZWN0Mi5jcmVkaXRzLFxuICAgIF9fYnJhbmQ6IFwiTWFqb3JDcmVkaXRzXCJcbiAgfTtcbn1cblxuLy8gRnVuY3Rpb24gdG8gc3VtIE1pbm9yQ3JlZGl0c1xuZnVuY3Rpb24gc3VtTWlub3JDcmVkaXRzKHN1YmplY3QxOiBNaW5vckNyZWRpdHMsIHN1YmplY3QyOiBNaW5vckNyZWRpdHMpOiBNaW5vckNyZWRpdHMge1xuICByZXR1cm4ge1xuICAgIGNyZWRpdHM6IHN1YmplY3QxLmNyZWRpdHMgKyBzdWJqZWN0Mi5jcmVkaXRzLFxuICAgIF9fYnJhbmQ6IFwiTWlub3JDcmVkaXRzXCJcbiAgfTtcbn1cblxuLy8gRXhhbXBsZSB1c2FnZSB0byBkZW1vbnN0cmF0ZSB0aGUgZnVuY3Rpb25hbGl0eVxuY29uc3QgbWFqb3JTdWJqZWN0MTogTWFqb3JDcmVkaXRzID0ge1xuICBjcmVkaXRzOiAzLFxuICBfX2JyYW5kOiBcIk1ham9yQ3JlZGl0c1wiXG59O1xuXG5jb25zdCBtYWpvclN1YmplY3QyOiBNYWpvckNyZWRpdHMgPSB7XG4gIGNyZWRpdHM6IDQsXG4gIF9fYnJhbmQ6IFwiTWFqb3JDcmVkaXRzXCJcbn07XG5cbmNvbnN0IG1pbm9yU3ViamVjdDE6IE1pbm9yQ3JlZGl0cyA9IHtcbiAgY3JlZGl0czogMSxcbiAgX19icmFuZDogXCJNaW5vckNyZWRpdHNcIlxufTtcblxuY29uc3QgbWlub3JTdWJqZWN0MjogTWlub3JDcmVkaXRzID0ge1xuICBjcmVkaXRzOiAyLFxuICBfX2JyYW5kOiBcIk1pbm9yQ3JlZGl0c1wiXG59O1xuXG4vLyBUZXN0IHRoZSBmdW5jdGlvbnNcbmNvbnN0IHRvdGFsTWFqb3JDcmVkaXRzID0gc3VtTWFqb3JDcmVkaXRzKG1ham9yU3ViamVjdDEsIG1ham9yU3ViamVjdDIpO1xuY29uc29sZS5sb2coJ1RvdGFsIE1ham9yIENyZWRpdHM6JywgdG90YWxNYWpvckNyZWRpdHMuY3JlZGl0cyk7IC8vIFNob3VsZCBwcmludDogN1xuXG5jb25zdCB0b3RhbE1pbm9yQ3JlZGl0cyA9IHN1bU1pbm9yQ3JlZGl0cyhtaW5vclN1YmplY3QxLCBtaW5vclN1YmplY3QyKTtcbmNvbnNvbGUubG9nKCdUb3RhbCBNaW5vciBDcmVkaXRzOicsIHRvdGFsTWlub3JDcmVkaXRzLmNyZWRpdHMpOyAvLyBTaG91bGQgcHJpbnQ6IDNcblxuLy8gVGhlIGZvbGxvd2luZyB3b3VsZCBjYXVzZSBUeXBlU2NyaXB0IGVycm9ycyBkdWUgdG8gbm9taW5hbCB0eXBpbmc6XG4vLyBzdW1NYWpvckNyZWRpdHMobWlub3JTdWJqZWN0MSwgbWlub3JTdWJqZWN0Mik7IC8vIEVycm9yOiBNaW5vckNyZWRpdHMgbm90IGFzc2lnbmFibGUgdG8gTWFqb3JDcmVkaXRzXG4vLyBzdW1NaW5vckNyZWRpdHMobWFqb3JTdWJqZWN0MSwgbWFqb3JTdWJqZWN0Mik7IC8vIEVycm9yOiBNYWpvckNyZWRpdHMgbm90IGFzc2lnbmFibGUgdG8gTWlub3JDcmVkaXRzIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9
