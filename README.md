@@ -655,9 +655,17 @@ Feel free to extend these examples with additional TypeScript features or create
 - 📦 Module augmentation patterns
 - 🎆 Advanced decorator patterns
 
+## 👨‍💻 Author
+
+**Héctor Soto** 🤯💻🪫  
+- GitHub: [@hector17rock](https://github.com/hector17rock)
+- Profile: Full-stack engineer with a passion for TypeScript and modern web development
+- Building: Advanced TypeScript learning projects and educational resources
+
 ---
 
-**🏁 Project completed**: September 12, 2025  
+**🏁 Project completed**: September 15, 2025  
 **🚀 TypeScript Version**: 5.x  
 **🟢 Node.js Version**: 20.x  
-**🖥️ Environment**: macOS with zsh shell
+**🖥️ Environment**: macOS with zsh shell  
+**👨‍💻 Created by**: [Héctor Soto](https://github.com/hector17rock)
